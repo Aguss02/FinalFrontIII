@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import style from "./Form.module.css"
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -28,13 +29,13 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={style.form}>
         <input placeholder="Full Name" onChange={handleName} />
         <input placeholder="Email" onChange={handleEmail} />
         <button type="submit">Submit</button>
       </form>
       {errorVisible && (
-        <div className="errorMessage">
+        <div className={style.errorMessage}>
           Please check if the information submited is correct
         </div>
       )}

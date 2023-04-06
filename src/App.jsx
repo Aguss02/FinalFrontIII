@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import DataContext from "./context/DataContext";
 import { useState, useEffect } from "react";
+import FavContextProvider from "./context/GlobalContext";
 
 function App() {
   const [dentistData, setdentistData] = useState([]);

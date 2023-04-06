@@ -1,14 +1,24 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+
 }
 
 footer img {
   height: 30px;
 }
 
-.card img {
-  height: 300px;
+footer{
+  margin-top: 3rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+ th, td {
+  border: 1px solid black;
+  padding: 1rem;
 }
