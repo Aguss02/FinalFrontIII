@@ -21,6 +21,13 @@ const reducer = (state, action) => {
       saveFavsToStorage(newFav);
       return { ...state, favs: newFav };
 
+    case "remove_fav":
+      const filteredFavs = state.favs.filter(
+        (fav) => fav.id !== action.payload
+      );
+      saveFavsToStorage(filteredFavs);
+      return { ...state, favs: filteredFavs };
+
     case "toggle_theme":
       const newTheme = state.theme === "light" ? "dark" : "light";
       return { ...state, theme: newTheme };

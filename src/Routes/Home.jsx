@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import Card from "../Components/Card";
 import DataContext from "../context/DataContext";
-import styles from "../Components/Card.module.css";
-
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -12,9 +10,9 @@ const Home = () => {
   const dentistData = useContext(DataContext);
 
   return (
-    <main className="">
+    <main >
       <h1>Home</h1>
-      <div className={styles.cardContainer}>
+      <div className="cardContainer">
         {
           /* Aqui deberias renderizar las cards */
           dentistData &&
